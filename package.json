@@ -1,0 +1,14 @@
+{
+  "name": "geogebra-delta",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/saunAAA/geogebra-delta.git",
+  "author": "saunAAA <48207288+saunAAA@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
