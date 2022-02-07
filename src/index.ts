@@ -1,5 +1,9 @@
-interface Window {
-  GGBApplet: any;
+import { registerListener } from './registerListener';
+
+declare global {
+  interface Window {
+    GGBApplet: any;
+  }
 }
 
 var params = {
@@ -9,6 +13,7 @@ var params = {
   showToolBar: true,
   showAlgebraInput: true,
   showMenuBar: true,
+  appletOnLoad: registerListener,
 };
 var applet = new window.GGBApplet({ id: 'app1', ...params }, true);
 var applet2 = new window.GGBApplet({ id: 'app2', ...params }, true);
